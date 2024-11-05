@@ -1,0 +1,95 @@
+body {
+  background-color: #f5e3b3;
+  color: #333;
+}
+header {
+  background-image: url(../img/header.dragonball.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: #ff9100;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #000;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
+nav {
+  background-color: #ff9100;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav li:hover {
+  text-decoration: underline;
+}
+
+section h2,
+p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Estilo general para las tarjetas de personajes */
+.card {
+  background-color: #222;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(255, 165, 0, 0.4);
+}
+
+.card-title {
+  font-family: "Sansita Swashed", cursive;
+  color: #ffd700;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #ccc;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffa500;
+}
+
+.btn-primary {
+  background-color: #ffa500;
+  border: none;
+  color: #222;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff8c00;
+}
