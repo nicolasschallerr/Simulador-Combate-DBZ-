@@ -6,7 +6,6 @@ class Personaje {
     this.ataque = ataque;
     this.defensa = defensa;
     this.defensaInicial = defensa;
-    this.img = imagen;
   }
 
   poderEspecial = () => this.ataque * 1.5;
@@ -27,11 +26,11 @@ let mensaje = sessionStorage.getItem("Bienvenido a Dragon Ball Combat");
 
 // Crear instancias de personajes
 const personajes = [
-  new Personaje("Super Saiyajin Goku", 60, 115, "/img/goku.avif"),
-  new Personaje("Soldado de Orgullo Giren", 60, 130, "/img/giren.jpg"),
+  new Personaje("Super Saiyajin Goku", 60, 115, "../img/goku.avif"),
+  new Personaje("Soldado de Orgullo Giren", 60, 130, "../img/giren.jpg"),
   new Personaje("Dios Bills", 70, 100),
-  new Personaje("Soldado de Orgullo Toppo", 40, 140, "/img/Toppo.png"),
-  new Personaje("Super Saiyajin Vegeta", 55, 110, "/img/vegeta.webp"),
+  new Personaje("Soldado de Orgullo Toppo", 40, 140, "../img/Toppo.png"),
+  new Personaje("Super Saiyajin Vegeta", 55, 110, "../img/vegeta.webp"),
   new Personaje("Dios Champa", 80, 90),
   new Personaje("Soldado de Orgullo Dyspo", 40, 140),
   new Personaje("Super Saiyajin Trunks", 55, 110),
@@ -114,8 +113,6 @@ function ReiniciarCombate(personaje1, personaje2) {
   personaje1.defensa = personaje1.defensaInicial;
   personaje2.defensa = personaje2.defensaInicial;
 }
-
-const resultado = realizarCombate(personaje1, personaje2);
 
 function renderizarPersonajes() {
   const contenedor = document.querySelector("#personajes-section .row");
